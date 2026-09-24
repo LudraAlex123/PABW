@@ -12,7 +12,7 @@ Topik halaman saya: koleksi buku di rak saya.
 - Tautan navigasi: 1. Beranda                   
                    2. Jadwal latihan                    
                    3. Tentang saya
-- Dua bagian utama: 1.  Jadwal Latihan Mingguan                                     
+- Dua bagian utama: 1. Jadwal Latihan Mingguan                                     
                     2. Target Olahraga Saya
 - Kolom tabel: Hari, Jenis Olahraga, Durasi, Kalori Terbakar
 - Kolom form: Jenis olahraga, Tanggal latihan, Durasi (menit)
