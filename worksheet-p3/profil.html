@@ -11,7 +11,7 @@
     <nav aria-label="Navigasi utama">
       <ul>
         <li><a href="#bagian-1">Jadwal Latihan</a></li>
-        <li><a href="#bagian-2">Tentang Saya</a></li>
+        <li><a href="#bagian-2">Target Olahraga</a></li>
         <li><a href="#bagian-3">Beranda</a></li>
       </ul>
     </nav>
@@ -68,12 +68,29 @@
     </section>
  
     <section id="bagian-2">
-      <h2>Tentang Saya</h2>
-      <!-- form Anda nanti di sini (Lembar E) -->
+      <h2>Target Olahraga</h2>
+ 
+  <form action="/simpan" method="post">
+    <p>
+      <label for="nama-kolom">Jenis Olahraga</label>
+      <input type="text" id="nama-kolom" name="jenis-olahraga" required>
+    </p>
+    <p>
+      <label for="durasi-kolom">Durasi</label>
+      <input type="text" id="durasi-kolom" name="durasi" required>
+    </p>
+    <p>
+      <label for="kalori-kolom">Kalori Terbakar</label>
+      <input type="text" id="kalori-kolom" name="kalori-terbakar" required>
+    </p>    
+    <button type="submit">Save</button>
+  </form>
+</section>
+>
     </section>
   </main>
  
-  <footer>
+  <footer id="bagian-3">
     <p>Ludra Meyfano Sumarno · 25523096 · 2026</p>
   </footer>
 

@@ -11,7 +11,7 @@ Topik halaman saya: koleksi buku di rak saya.
 - Deskripsi: Halaman ini berisi jadwal latihan mingguan saya beserta target yang ingin saya capai.
 - Tautan navigasi: 1. Beranda                   
                    2. Jadwal latihan                    
-                   3. Tentang saya
+                   3. Target Olahraga
 - Dua bagian utama: 1. Jadwal Latihan Mingguan                                     
                     2. Target Olahraga Saya
 - Kolom tabel: Hari, Jenis Olahraga, Durasi, Kalori Terbakar
