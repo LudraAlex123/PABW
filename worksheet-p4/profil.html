@@ -27,78 +27,75 @@
   <main>
     <section id="bagian-1">
       <h2>Jadwal Latihan</h2>
-      <section id="bagian-1">
-  <table>
-    <thead>
-      <tr>
-        <th scope="col">Hari</th>
-        <th scope="col">Jenis Olahraga</th>
-        <th scope="col">Durasi</th>
-        <th scope="col">Kalori Terbakar</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Senin</th>
-        <td>Berlari</td>
-        <td>30 menit</td>
-        <td>300 kalori</td>
-      </tr>
-      <tr>
-        <th scope="row">Selasa</th>
-        <td>Angkat Beban</td>
-        <td>45 menit</td>
-        <td>250 kalori</td>
-      </tr>
-      <tr>
-        <th scope="row">Rabu</th>
-        <td>Bersepeda</td>
-        <td>60 menit</td>
-        <td>400 kalori</td>
-      </tr>
-      <tr>
-        <th scope="row">Kamis</th>
-        <td>Renang</td>
-        <td>30 menit</td>
-        <td>350 kalori</td>
-      </tr>
-    </tbody>
-  </table>
-  <figure>
-  <img src="olahraga.webp"
-       alt="Gambar orang sedang lari"
-       width="640" height="360" loading="lazy">
-  <figcaption>Berlari di pagi hari</figcaption>
-</figure>
-
-</section>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Hari</th>
+            <th scope="col">Jenis Olahraga</th>
+            <th scope="col">Durasi</th>
+            <th scope="col">Kalori Terbakar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Senin</th>
+            <td>Berlari</td>
+            <td>30 menit</td>
+            <td>300 kalori</td>
+          </tr>
+          <tr>
+            <th scope="row">Selasa</th>
+            <td>Angkat Beban</td>
+            <td>45 menit</td>
+            <td>250 kalori</td>
+          </tr>
+          <tr>
+            <th scope="row">Rabu</th>
+            <td>Bersepeda</td>
+            <td>60 menit</td>
+            <td>400 kalori</td>
+          </tr>
+          <tr>
+            <th scope="row">Kamis</th>
+            <td>Renang</td>
+            <td>30 menit</td>
+            <td>350 kalori</td>
+          </tr>
+        </tbody>
+      </table>
+      <figure>
+        <img src="olahraga.webp"
+             alt="Gambar orang sedang lari"
+             width="640" height="360" loading="lazy">
+        <figcaption>Berlari di pagi hari</figcaption>
+      </figure>
     </section>
- 
+
     <section id="bagian-2">
       <h2>Target Olahraga</h2>
- 
-  <form action="/simpan" method="post">
-    <p>
-      <label for="nama-kolom">Jenis Olahraga</label>
-      <input type="text" id="nama-kolom" name="jenis-olahraga" required>
-    </p>
-    <p>
-      <label for="durasi-kolom">Durasi</label>
-      <input type="number" id="durasi-kolom" name="durasi" required>
-    </p>
-    <p>
-      <label for="kalori-kolom">Kalori Terbakar</label>
-      <input type="number" id="kalori-kolom" name="kalori-terbakar" required>
-    </p>    
-    <button type="submit">Save</button>
-  </form>
-</section>
->
+
+      <form action="/simpan" method="post">
+        <div class="form-kolom">
+          <label for="nama-kolom">Jenis Olahraga</label>
+          <input type="text" id="nama-kolom" name="jenis-olahraga" required>
+          <span class="pesan-galat">Kolom ini wajib diisi</span>
+        </div>
+        <div class="form-kolom">
+          <label for="durasi-kolom">Durasi</label>
+          <input type="number" id="durasi-kolom" name="durasi" required>
+          <span class="pesan-galat">Isi durasi dengan angka</span>
+        </div>
+        <div class="form-kolom">
+          <label for="kalori-kolom">Kalori Terbakar</label>
+          <input type="number" id="kalori-kolom" name="kalori-terbakar" required>
+          <span class="pesan-galat">Isi kalori dengan angka</span>
+        </div>
+        <button type="submit">Save</button>
+      </form>
     </section>
   </main>
- 
+
   <footer id="bagian-3">
     <p>Ludra Meyfano Sumarno · 25523096 · 2026</p>
   </footer>
-
 
