@@ -1,5 +1,5 @@
 :root {
-  --green-700: #15803D;
+  --green-700: #7C3AED;
   --green-900: #0F6B33;
   --gray-50: #F7FAF9;
   --gray-900: #14261F;
@@ -24,7 +24,7 @@
   --color-bg: var(--gray-50);
   --color-fg: var(--gray-900);
   --color-surface: #FFFFFF;
-  --color-border: var(--color-border);
+  --color-border: #6E8579;
   --color-primary: var(--green-700);
   --color-danger: #B00020;
   --color-focus: var(--green-900);
