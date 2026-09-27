@@ -24,7 +24,7 @@
   --color-bg: var(--gray-50);
   --color-fg: var(--gray-900);
   --color-surface: #FFFFFF;
-  --color-border: #D9E2DC;
+  --color-border: var(--color-border);
   --color-primary: var(--green-700);
   --color-danger: #B00020;
   --color-focus: var(--green-900);
