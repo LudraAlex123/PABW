@@ -23,3 +23,25 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
+
+const jadwalLatihan = [
+  { hari: "Senin", jenis: "Berlari", durasi: 30, kalori: 300, selesai: true },
+  { hari: "Selasa", jenis: "Angkat Beban", durasi: 45, kalori: 250, selesai: true },
+  { hari: "Rabu", jenis: "Bersepeda", durasi: 60, kalori: 400, selesai: false },
+  { hari: "Kamis", jenis: "Renang", durasi: 30, kalori: 350, selesai: false },
+];
+console.table(profil.keahlian);
+console.table(jadwalLatihan);
+
+const sudahSelesai = jadwalLatihan.filter((sesi) => sesi.selesai);
+console.table(sudahSelesai);
+
+const sesiRenang = jadwalLatihan.find((sesi) => sesi.jenis === "Renang");
+console.log(sesiRenang);
+
+const namaHari = jadwalLatihan.map((sesi) => sesi.hari);
+console.log(namaHari);
+
+const urut = [...jadwalLatihan].sort((a, b) => b.kalori - a.kalori);
+console.table(urut);
+console.table(jadwalLatihan);
