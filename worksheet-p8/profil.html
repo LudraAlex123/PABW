@@ -15,7 +15,6 @@
   <header>
     <input type="checkbox" id="tema" class="pengalih-tema">
     <label for="tema" class="tombol-tema">Tema</label>
-  </header>
   <div class="header-baris">
     <h1>Jadwal dan Target Olahraga Saya</h1>
     <nav aria-label="Navigasi utama">
@@ -31,6 +30,11 @@
   <main>
     <section id="bagian-1">
       <h2>Jadwal Latihan</h2>
+      <div id="filter">
+        <button type="button" data-category="all" class="active">Semua</button>
+        <button type="button" data-category="kardio">Kardio</button>
+        <button type="button" data-category="kekuatan">Kekuatan</button>
+      </div>
       <table>
         <thead>
           <tr>
@@ -40,7 +44,7 @@
             <th scope="col">Kalori Terbakar</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="daftar-jadwal">
           <tr>
             <th scope="row">Senin</th>
             <td>Berlari</td>
@@ -67,6 +71,7 @@
           </tr>
         </tbody>
       </table>
+      <p id="pesan-kosong" hidden>Tidak ada sesi di kategori ini.</p>
       <figure>
         <img src="olahraga.webp"
              alt="Gambar orang sedang lari"
@@ -78,7 +83,7 @@
     <section id="bagian-2">
       <h2>Target Olahraga</h2>
 
-      <form action="/simpan" method="post">
+      <form id="form-target" action="/simpan" method="post">
         <div class="form-kolom">
           <label for="nama-kolom">Jenis Olahraga</label>
           <input type="text" id="nama-kolom" name="jenis-olahraga" required>
@@ -105,4 +110,6 @@
   <script type="module" src="js/app.js"></script>
   </body>
   </html>
+
+  
 
