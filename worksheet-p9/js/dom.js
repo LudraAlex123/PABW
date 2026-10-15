@@ -32,11 +32,33 @@ function buildRow(sesi) {
 }
 
 function renderJadwal(data) {
-  container.textContent = "";                       // kosongkan dulu
+  container.textContent = "";
 
   const fragment = document.createDocumentFragment();
   data.forEach((sesi) => fragment.append(buildRow(sesi)));
-  container.append(fragment);                       // tempel sekali saja
+  container.append(fragment);
+
+  empty.hidden = data.length > 0;
 }
 
 renderJadwal(jadwalLatihan);
+
+function markActiveButton(activeButton) {
+  document.querySelectorAll("#filter button").forEach((button) => {
+    button.classList.toggle("active", button === activeButton);
+  });
+}
+
+filterRow.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+
+  const category = button.dataset.category;
+  const terpilih = jadwalLatihan.filter(
+    (sesi) => category === "all" || sesi.kategori === category
+  );
+  markActiveButton(button);
+  renderJadwal(terpilih);
+
+  renderJadwal(terpilih);
+});
