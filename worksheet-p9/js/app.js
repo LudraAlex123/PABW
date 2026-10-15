@@ -24,12 +24,13 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
-const jadwalLatihan = [
-  { hari: "Senin", jenis: "Berlari", durasi: 30, kalori: 300, selesai: true },
-  { hari: "Selasa", jenis: "Angkat Beban", durasi: 45, kalori: 250, selesai: true },
-  { hari: "Rabu", jenis: "Bersepeda", durasi: 60, kalori: 400, selesai: false },
-  { hari: "Kamis", jenis: "Renang", durasi: 30, kalori: 350, selesai: false },
+export const jadwalLatihan = [
+  { hari: "Senin", jenis: "Berlari", durasi: 30, kalori: 300, selesai: true, kategori: "kardio" },
+  { hari: "Selasa", jenis: "Angkat Beban", durasi: 45, kalori: 250, selesai: true, kategori: "kekuatan" },
+  { hari: "Rabu", jenis: "Bersepeda", durasi: 60, kalori: 400, selesai: false, kategori: "kardio" },
+  { hari: "Kamis", jenis: "Renang", durasi: 30, kalori: 350, selesai: false, kategori: "kardio" },
 ];
+
 console.table(profil.keahlian);
 console.table(jadwalLatihan);
 
