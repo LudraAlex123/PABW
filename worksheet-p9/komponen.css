@@ -44,5 +44,18 @@ input:user-invalid {
   font-weight: 700;
 }
 
+.pesan-galat {
+  color: #b91c1c;
+  font-size: 0.85rem;
+}
+.pesan-galat:not([hidden]) {
+  display: block;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .pesan-galat { display: none; color: var(--color-danger); font-size: var(--text-sm); }
 .form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
