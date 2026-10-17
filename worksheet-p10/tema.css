@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0F1A14;
+    --color-fg: #E2E8E4;
+    --color-surface: #1B2B21;
+    --color-border: #52695A;
+    --color-primary: #4ADE80;
+    --color-danger: #FF8A8A;
+    --color-focus: #86EFAC;
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, .45);
+  }
+}
+.pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
+:root:has(#tema:checked) {
+  --color-bg: #0F1A14;
+  --color-fg: #E2E8E4;
+  --color-surface: #1B2B21;
+  --color-border: #34493B;
+  --color-primary: #4ADE80;
+  --color-danger: #FF8A8A;
+  --color-focus: #86EFAC;
+}
+:root:not(:has(#tema:checked)) {
+  --color-bg: #F7FAF9;
+  --color-fg: #14261F;
+  --color-surface: #FFFFFF;
+  --color-border: #D9E2DC;
+  --color-primary: #15803D;
+  --color-danger: #B00020;
+  --color-focus: #0F6B33;
+}
