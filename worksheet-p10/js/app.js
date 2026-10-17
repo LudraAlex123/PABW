@@ -50,20 +50,33 @@ console.table(urut);
 console.table(jadwalLatihan);
 
 const statusBox = document.querySelector('#status');
+const container = document.querySelector('#list');
+
+function render(list) {
+  container.textContent = '';
+  if (list.length === 0) {
+    statusBox.textContent = 'No news yet';
+    return;
+  }
+  statusBox.textContent = '';
+  list.forEach(function (n) {
+    const card = document.createElement('article');
+    const heading = document.createElement('h3');
+    heading.textContent = n.title;
+    card.appendChild(heading);
+    container.appendChild(card);
+  });
+}
 
 async function init() {
   statusBox.textContent = 'Loading news...';
   try {
     const list = await fetchNews();
-    console.log(list);
-    statusBox.textContent = '';
+    render(list);
   } catch (error) {
+    container.textContent = '';
     statusBox.textContent = 'Failed to load: ' + error.message;
   }
 }
 
 init();
-window.init = init;
-
-   async function coba() {
-   }

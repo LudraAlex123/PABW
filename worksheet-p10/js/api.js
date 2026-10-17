@@ -1,3 +1,4 @@
+// js/api.js
 const API_URL = 'https://jsonplaceholder.typicode.com/posts?_limit=6';
 
 export async function fetchNews() {
