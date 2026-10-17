@@ -63,3 +63,4 @@ async function init() {
 }
 
 init();
+window.init = init;
