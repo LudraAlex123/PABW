@@ -1,4 +1,4 @@
-   import { load } from './api.js';
+   import { fetchNews } from './api.js';
 
 const profil = {
   nama: "Ludra Meyfano Sumarno",
@@ -49,4 +49,17 @@ const urut = [...jadwalLatihan].sort((a, b) => b.kalori - a.kalori);
 console.table(urut);
 console.table(jadwalLatihan);
 
-   load();
+const statusBox = document.querySelector('#status');
+
+async function init() {
+  statusBox.textContent = 'Loading news...';
+  try {
+    const list = await fetchNews();
+    console.log(list);
+    statusBox.textContent = '';
+  } catch (error) {
+    statusBox.textContent = 'Failed to load: ' + error.message;
+  }
+}
+
+init();
